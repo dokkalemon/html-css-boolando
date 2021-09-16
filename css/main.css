@@ -16,4 +16,24 @@
     width: 55%;
     margin: 0 auto;
     background-color: white
+    
+}
+
+/* production list */
+
+.product-list { 
+    margin: 0 auto; 
+    width: 75%;
+}
+
+
+/* production item */
+.product-item {
+    display: inline-block;
+    background-color: black;
+    width: calc(100% /3);
+    margin: 0 -3px 60px 0;
+    height: 400px;
+    color: white
+
 }
