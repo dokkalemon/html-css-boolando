@@ -30,7 +30,7 @@
 /* production item */
 .product-item {
     display: inline-block;
-    background-color: black;
+
     width: calc(100% /3);
     margin: 0 -3px 20px 0;
     height: 450px;
@@ -41,7 +41,6 @@
 .product-img {
     height: 85%; 
     width: 100%; 
-    background-color: red;
     position: relative
 }
 
@@ -88,8 +87,6 @@
 
 }
 
-
-
 .text-label {
     font-size: 12px;
     font-weight: 600;
@@ -104,4 +101,125 @@
 .material span {
     background-color: #00875a;
     padding: 5px
+}
+
+/* production description */
+.description {
+    color: black;
+    margin-top: 10px
+}
+
+.description h5 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.description h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.description p {
+    color: red;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.description p span {
+    color: black;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+
+/* change image in hover */
+.img1 {
+    background-image: url('../img/1.webp');
+    background-size: cover;
+}
+
+.product-item:hover .img1 {
+    background-image: url('../img/1b.webp');
+}
+
+.img2 {
+    background-image: url('../img/2.webp');
+    background-size: cover;
+}
+
+.product-item:hover .img2 {
+    background-image: url('../img/2b.webp');
+}
+
+
+.img3 {
+    background-image: url('../img/3.webp');
+    background-size: cover;
+}
+
+.product-item:hover .img3 {
+    background-image: url('../img/3b.webp');
+}
+
+.img4 {
+    background-image: url('../img/4.webp');
+    background-size: cover;
+}
+
+.product-item:hover .img4 {
+    background-image: url('../img/4b.webp');
+}
+
+.img5 {
+    background-image: url('../img/5.webp');
+    background-size: cover;
+}
+
+.product-item:hover .img5 {
+    background-image: url('../img/5b.webp');
+}
+
+.img6 {
+    background-image: url('../img/6.webp');
+    background-size: cover;
+}
+
+.product-item:hover .img6 {
+    background-image: url('../img/6b.webp');
+}
+
+
+
+/* different product */
+
+.product-item:nth-child(2) .product-label .material {
+    display: none
+}
+
+.product-item:nth-child(3) .product-label .material {
+    display: none
+}
+
+.product-item:nth-child(3) .description span  {
+    display: none
+}
+
+.product-item:nth-child(5) .description span  {
+    display: none
+}
+
+.product-item:nth-child(5) .product-label .material {
+    display: none
+}
+
+.product-item:nth-child(5) .product-label .discount {
+    display: none
+}
+
+.product-item:last-child .description span  {
+    display: none
+}
+
+.product-item:last-child .product-label .discount  {
+    display: none
 }
