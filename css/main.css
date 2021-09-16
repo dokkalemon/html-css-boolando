@@ -7,3 +7,13 @@
     font-family: sans-serif
 }
 
+
+
+/* Main Content Style */
+
+/* Conteiner */
+.conteiner {
+    width: 55%;
+    margin: 0 auto;
+    background-color: white
+}
