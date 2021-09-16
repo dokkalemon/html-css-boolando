@@ -13,7 +13,7 @@
 
 /* Conteiner */
 .conteiner {
-    width: 55%;
+    width: 65%;
     margin: 0 auto;
     background-color: white
     
@@ -41,7 +41,8 @@
 .product-img {
     height: 85%; 
     width: 100%; 
-    background-color: red
+    background-color: red;
+    position: relative
 }
 
 .product-item .hearts {
@@ -51,7 +52,7 @@
     background-color: white;
     font-size: 17px;
     color: black;
-    padding: 0 7px;
+    padding: 2px 7px;
 }
 
 .product-item .hearts:hover {
@@ -59,5 +60,48 @@
 }
 
 .product-item:hover .hearts {
-    color: red
+    color: red;
+    transition-duration: 0.2s;
+    padding: 2px 12px;
+}
+
+.product-item:hover .hearts::after {
+    content: ' Save for Next Time';
+    font-size: 12px;
+    vertical-align: middle;
+    font-weight: 600
+}
+
+
+/* label */
+
+.product-label {
+    height: 20px; 
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.product-label section {
+    display: inline-block;
+
+}
+
+
+
+.text-label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.discount span {
+    background-color: #eb0037;
+    padding: 5px
+}
+
+
+.material span {
+    background-color: #00875a;
+    padding: 5px
 }
